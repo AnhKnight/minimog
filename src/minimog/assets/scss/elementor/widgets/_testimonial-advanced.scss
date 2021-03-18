@@ -1,0 +1,65 @@
+.tm-testimonial-advanced {
+  border: 1px solid rgba(151, 151, 151, 0.37);
+  border-radius: 5px;
+
+
+  .testimonial-content {
+	 overflow: hidden;
+	 margin-left: 12%;
+	 margin-top: 45px;
+	 margin-bottom: 40px;
+	 padding-right: 13%;
+	 background: url("assets/images/Quote.png") no-repeat 87% 0;
+
+	 .testimonial-avatar {
+		img {
+		  width: 60px;
+		  height: 60px;
+		}
+
+		margin-bottom: 16px;
+	 }
+
+	 .title-wrap {
+		.title {
+		  font-family: CircularStd;
+		  font-size: 20px;
+		  font-weight: 700;
+		  line-height: 1;
+		  color: #333333;
+		  margin-bottom: 16px;
+		}
+	 }
+
+	 .description-wrap {
+		.description {
+		  font-family: CircularStd;
+		  font-size: 20px;
+		  font-weight: 400;
+		  line-height: 1.6;
+		  color: #696969;
+		}
+	 }
+		.cite-space{
+		  height: 56px;
+		}
+	 .cite-wrap {
+		.cite-name {
+		  font-family: CircularStd;
+		  font-size: 18px;
+		  font-weight: 700;
+		  line-height: 1;
+		  color: #333333;
+		}
+
+		.cite-position {
+		  margin-top: 12px;
+		  font-family: CircularStd;
+		  font-size: 15px;
+		  font-weight: 400;
+		  line-height: 1.2;
+		  color: #7e7e7e;
+		}
+	 }
+  }
+}

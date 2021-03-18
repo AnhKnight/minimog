@@ -1,0 +1,31 @@
+.tm-view-demo {
+	text-align: center;
+
+	.minimog-box {
+		position: relative;
+		display: block;
+	}
+
+	.image {
+		box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+		border-radius: 5px;
+
+		> img {
+			width: 100%;
+			border-radius: inherit;
+		}
+	}
+
+	.heading {
+		font-size: 20px;
+		line-height: 1.5;
+		margin: 29px 0 0;
+	}
+
+	.badge {
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		z-index: 2;
+	}
+}

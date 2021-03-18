@@ -1,0 +1,125 @@
+.popup-canvas-menu {
+	.page-popup-content {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		overflow-y: auto;
+	}
+
+	.page-navigation {
+		display: table;
+		height: 100%;
+
+		.menu__container {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 40px 0;
+			text-align: center;
+
+			a {
+				display: inline-block;
+				padding: 4px 0;
+			}
+
+			> li > a {
+				position: relative;
+				padding-left: 15px;
+				padding-right: 15px;
+
+				.toggle-sub-menu {
+					position: absolute;
+					top: 50%;
+					right: -10px;
+
+					&:before {
+						font-weight: 400;
+						font-size: .5em;
+					}
+				}
+			}
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	.menu__container {
+		> li {
+			opacity: 0;
+			transform: translate3d(0, 30px, 0);
+			transition: all .5s ease-in-out, opacity .5s linear;
+		}
+	}
+
+	li {
+		list-style-type: none;
+		margin: 0;
+	}
+
+	.children {
+		display: none;
+	}
+
+	.admin-bar & {
+		top: 32px;
+	}
+
+	.insight-core-bmw {
+
+		.menu {
+			text-align: center !important;
+		}
+
+		li {
+			margin-bottom: 0;
+			padding: 0;
+			border: 0;
+
+			a {
+				padding: 0;
+			}
+		}
+	}
+
+	&.open {
+		.menu__container {
+			> li {
+				transform: none;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// Max font size min 24px & max 40px;
+.popup-canvas-menu .menu__container > li > a {
+	font-size: 3.7vh;
+}
+
+.popup-canvas-menu .menu__container .children a {
+	font-size: 2.5vh;
+	line-height: 1.5;
+}
+
+@media (min-height: 1081px) {
+	.popup-canvas-menu .menu__container > li > a {
+		font-size: 40px;
+	}
+
+	.popup-canvas-menu .menu__container .children a {
+		font-size: 28px;
+	}
+}
+
+@media (max-height: 640px) {
+	.popup-canvas-menu .menu__container > li > a {
+		font-size: 24px;
+	}
+
+	.popup-canvas-menu .menu__container .children a {
+		font-size: 16px;
+	}
+}

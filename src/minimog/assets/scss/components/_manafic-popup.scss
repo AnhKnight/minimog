@@ -1,0 +1,47 @@
+.mfp-bg.mfp-bg {
+	background: #3f3a64;
+	opacity: .9;
+	z-index: 100000 !important;
+}
+
+.mfp-wrap.mfp-wrap {
+	@extend %LightCloseCursor;
+	z-index: 100001 !important;
+}
+
+.mfp-inline-holder {
+	.mfp-content {
+		@extend %LightCloseCursor;
+	}
+}
+
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	transition: all 0.15s ease-out;
+}
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: .5;
+}
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	transition: all 0.15s ease-out;
+}
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}

@@ -1,0 +1,39 @@
+.boxed {
+	margin: 0 auto;
+	max-width: 1200px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, .06);
+}
+
+.site {
+	@extend %NormalTransition;
+	overflow: hidden;
+}
+
+.page-sidebar,
+.page-main-content {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+}
+
+@include media-breakpoint-up(xl) {
+	.container {
+		max-width: 1790px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.container.container-small {
+		max-width: 1200px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.elementor-section.elementor-top-section > .elementor-container {
+		max-width: 1790px;
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+}

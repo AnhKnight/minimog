@@ -1,0 +1,46 @@
+.widget {
+  .tagcloud {
+	 position: relative;
+	 @extend %clearfix;
+	 margin: -5px -15px;
+
+	 a {
+		display: block;
+		float: left;
+		font-size: 16px !important;
+		font-weight: 400;
+		line-height: 1.4;
+		background: #fff;
+		color: #666666;
+		border: 0;
+		overflow: hidden;
+		padding: 7px 0;
+		margin: 5px 15px;
+		position: relative;
+
+		&:after {
+		  content: "";
+		  width: 0;
+		  height: 2px;
+		  background-color: #000;
+		  position: absolute;
+		  left: 0;
+		  bottom: 3px;
+		  transition: all .3s;
+		}
+
+		&:before{
+		  display: none !important;
+		}
+
+		&:hover {
+		  background-color: #0000 !important;
+		  color: #000;
+
+		  &:after {
+			 width: 100%;
+		  }
+		}
+	 }
+  }
+}

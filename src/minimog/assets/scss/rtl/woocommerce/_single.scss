@@ -1,0 +1,28 @@
+.rtl {
+	.entry-product-share h6,
+	.entry-product-meta h6 {
+		margin: 0 0 0 15px;
+	}
+
+	&.single-product {
+		form.cart {
+			.single_add_to_cart_button,
+			.product-action {
+				margin-right: 0;
+				margin-left: 11px;
+			}
+
+			.quantity-button-wrapper > label {
+				padding-right: 0;
+				padding-left: 15px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.single-product-slider .entry-summary {
+		padding-left: 0;
+		padding-right: 40px;
+	}
+}

@@ -1,0 +1,57 @@
+.minimog-product-categories {
+  .product-cat-wrapper {
+	 position: relative;
+	 display: block;
+	 text-align: left;
+	 height: 100%;
+
+  }
+
+  .product-cat-name {
+	 @extend %NormalTransition;
+	 font-size: 20px;
+	 font-weight: 500;
+	 margin: 18px 0 0;
+	 color: #000;
+
+	 > span {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 600;
+		transform: translate3d(5px, -5px, 0);
+	 }
+  }
+}
+
+@include elementor-breakpoint-down(sm) {
+  .minimog-product-categories {
+	 .product-cat-wrapper {
+		padding: 25px 20px 30px;
+	 }
+  }
+}
+
+
+.minimog-grid {
+  &-metro {
+	 .product-cat-wrapper {
+		.product-cat-name {
+		  display: flex;
+		  justify-content: center;
+		  position: absolute;
+		  bottom: 30px;
+		  left: 50%;
+		  height: 45px;
+		  align-items: center;
+		  background-color: #fff;
+		  padding: 0 20px;
+		  min-width: 160px;
+		  font-size: 18px;
+		  font-weight: 500;
+		  transform: translateX(-50%);
+		  border-radius: 5px;
+		}
+	 }
+  }
+}
+

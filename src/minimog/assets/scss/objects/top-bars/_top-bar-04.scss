@@ -1,0 +1,46 @@
+.top-bar-04 {
+  background-color: #f2f4f9 !important;
+  font-family: CircularStd;
+  display: flex;
+  justify-content: center;
+
+  .row-eq-height {
+	 width: 1200px;
+  }
+
+  .top-bar-text {
+	 display: flex;
+
+	 .top-bar-tag-04 {
+		color: #4e97fd;
+		background-color: white;
+		border-radius: 5px;
+		margin-right: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+		font-size: 14px;
+		font-weight: 500;
+	 }
+
+	 .top-bar-tag-04:hover {
+		color: white;
+		background: #fe5b34;
+	 }
+
+	 .text-04 {
+		font-size: 14px;
+		color: #696969;
+	 }
+  }
+
+  .top-bar-left {
+	 .top-bar-wrap {
+		justify-content: flex-end;
+	 }
+  }
+
+  .info-text:after {
+	 content: url("assets/images/togger-icon.png");
+	 margin-left: 5px;
+  }
+}

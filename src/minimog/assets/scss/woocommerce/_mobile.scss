@@ -1,0 +1,20 @@
+.desktop {
+	.minimog-product {
+		&.style-grid-01,
+		&.style-grid-02 {
+			.product-wrapper {
+				&:hover {
+					.product-actions {
+						opacity: 1;
+					}
+				}
+			}
+
+			.product-actions {
+				@extend %NormalTransition;
+				/* TranslateY has strange position after quick view popup open. Use opacity instead of. */
+				opacity: 0;
+			}
+		}
+	}
+}

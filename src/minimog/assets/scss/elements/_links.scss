@@ -1,0 +1,34 @@
+a {
+	@extend %NormalTransition;
+	color: royalblue;
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		outline: 0;
+		color: midnightblue;
+	}
+
+	&[href^=tel] {
+		text-decoration: none;
+	}
+}
+
+.link-secret {
+	color: inherit !important;
+}
+
+.link-transition-01 {
+	@include LinkTransition();
+}
+
+.link-transition-02 {
+	@include LinkTransition02();
+}
+
+.title-has-link {
+	a {
+		color: inherit;
+	}
+}

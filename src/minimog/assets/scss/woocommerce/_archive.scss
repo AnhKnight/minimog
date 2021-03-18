@@ -1,0 +1,151 @@
+@keyframes adding-spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.woocommerce {
+	nav.woocommerce-pagination {
+		text-align: center;
+
+		ul {
+			margin: 56px 0 0;
+			border: 0;
+
+			li {
+				display: inline-block;
+				padding: 0;
+				margin: 0;
+				border: 0;
+				list-style-type: none;
+
+				> span,
+				> a {
+					padding: 0;
+					display: block;
+					font-size: 16px;
+					font-weight: 500;
+					text-transform: uppercase;
+					color: inherit;
+					min-width: 40px;
+					height: 40px;
+					line-height: 38px;
+					border: 0;
+					border-radius: 50%;
+					background: none;
+				}
+
+				span.current {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.archive-shop-actions {
+		margin-bottom: 17px;
+	}
+
+	.woocommerce-result-count {
+		margin: 0;
+
+		.total {
+			color: #333;
+			font-weight: 500;
+		}
+	}
+
+	.woocommerce-ordering {
+		display: inline-block;
+		margin: 0;
+		float: none;
+
+		select {
+			min-height: 48px;
+		}
+
+		.minimog-fake-select-current {
+			.label {
+				&:before {
+					@extend %FontAwesomeRegular;
+					content: '\f036';
+					vertical-align: middle;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.cats {
+		margin-bottom: 50px;
+		.product-category {
+			.cat-title,
+			.cat-count {
+				color: #fff;
+			}
+		}
+
+		.cat-title {
+			margin-bottom: 5px;
+		}
+
+		.cat-image {
+			img {
+				width: 100%;
+			}
+		}
+
+		.cat-text {
+			@extend %NormalTransition;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			padding: 15px;
+			background-color: rgba(0, 0, 0, .8);
+			text-transform: uppercase;
+		}
+
+		.cat-title {
+			@extend %NormalTransition;
+		}
+
+		.cat-count {
+			@extend %NormalTransition;
+			margin: 0;
+			color: initial;
+			font-size: 12px;
+		}
+	}
+}
+
+.shop-actions-toolbar-left,
+.shop-actions-toolbar-right {
+	margin-bottom: 21px;
+}
+
+.shop-actions-toolbar-right {
+	> .inner {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-left: -10px;
+		margin-right: -10px;
+
+		> * {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.archive-shop-wide {
+		.page-content {
+			> .container {
+				max-width: 1750px;
+			}
+		}
+	}
+}

@@ -1,0 +1,147 @@
+{
+  "1.2.5": {
+	  "time": "16 December, 2020",
+	  "desc": [
+		"Updated: WPC Smart Compare for WooCommerce - v.3.3.0",
+		"Updated: WooCommerce Stripe Gateway - v.4.6.0",
+		"Added: Landing Page",
+		"Fixed: Aqua Resize PHP Warning",
+		"Updated: Import files"
+	  ]
+  },
+  "1.2.4.beta": {
+		"time": "09 December, 2020",
+		"desc": [
+			"Updated: Elementor Pro plugin - v.3.0.8",
+			"Updated: Revolution Slider plugin - v.6.3.2",
+			"Updated: WooCommerce Brands Pro plugin - v.4.4.7",
+			"Updated: Instagram Feed plugin - v.4.0.1"
+		]
+	},
+	"1.2.3": {
+		"time": "02 December, 2020",
+		"desc": [
+			"Added: New homepage, Home 5 - The Pharmacy",
+			"Added: Elementor widget categories banner",
+			"Added: Elementor widget carousel product vertical",
+			"Updated: Import files"
+		]
+	},
+	"1.2.2": {
+		"time": "12 October, 2020",
+		"desc": [
+			"Updated: Insight Core plugin - v.1.7.5",
+			"Updated: Elementor Pro plugin - v.3.0.5",
+			"Updated: Revolution Slider plugin - v.6.2.23",
+			"Added: New homepage, Home 4 - The Medical Kit",
+			"Updated: Import files"
+		]
+	},
+	"1.2.1": {
+		"time": "10 September, 2020",
+		"desc": [
+			"Fixed: Mobile Menu can't open sub menu on some edge case."
+		]
+	},
+	"1.2.0": {
+		"time": "07 September, 2020",
+		"desc": [
+			"Fixed: Importer not working properly with latest Elementor plugin.",
+			"Updated: Insight Core plugin - v.1.7.3"
+		]
+	},
+	"1.1.3": {
+		"time": "24 August, 2020",
+		"desc": [
+			"Fixed: Woocommerce cart shipping style.",
+			"Updated: Insight Core plugin - v.1.7.2",
+			"Updated: Revolution Slider plugin - v.6.2.22",
+			"Updated: out-date Woocommerce templates"
+		]
+	},
+	"1.1.2": {
+		"time": "13 August, 2020",
+		"desc": [
+			"Fixed: Customize not working with WordPress 5.5 (Required update Insight Core)",
+			"Updated: Insight Core plugin - v.1.7.1",
+			"Updated: Revolution Slider plugin - v.6.2.18",
+			"Added: new Instagram Feed plugin - v.3.8.7",
+			"Removed: old Instagram widget. Used Instagram Feed plugin instead of."
+		]
+	},
+	"1.1.1": {
+		"time": "20 July, 2020",
+		"desc": [
+			"Fixed: wrong theme version.",
+			"Updated: Revolution Slider plugin - v.6.2.17",
+			"Update: better compatible for WPML"
+		]
+	},
+	"1.1.0": {
+		"time": "06 July, 2020",
+		"desc": [
+			"Added: Retina Display option. Turn on Customize - Advanced",
+			"Fixed: product brand nav layered filter.",
+			"Updated: Insight Core plugin - v.1.7.0",
+			"Updated: Revolution Slider plugin - v.6.2.15",
+			"Improvement: site performance."
+		]
+	},
+	"1.0.6": {
+		"time": "04 June, 2020",
+		"desc": [
+			"Fixed: logo blurry on retina devices.",
+			"Improvement: search results page layout.",
+			"Improvement: site performance.",
+			"Updated: Revolution Slider plugin - v.6.2.10"
+		]
+	},
+	"1.0.5": {
+		"time": "27 May, 2020",
+		"desc": [
+			"Fixed: minor sidebar widget style",
+			"Updated: Insight Core plugin v.1.6.9",
+			"Updated: Revolution Slider plugin v.6.2.8",
+			"Updated: Elementor plugin v.2.9.5"
+		]
+	},
+	"1.0.4": {
+		"time": "13 May, 2020",
+		"desc": [
+			"Tweak: Change default theme logo, preview",
+			"Fixed: PHP warning."
+		]
+	},
+	"1.0.3": {
+		"time": "11 May, 2020",
+		"desc": [
+			"Added: New title bar style 04",
+			"Fixed: Woocommerce single product slider.",
+			"Fixed: Woocommerce product variation not change images when use cdn links.",
+			"Tweak: change default title bar style for single product page.",
+			"Tweak: change button font size.",
+			"Tweak: single product title font size."
+		]
+	},
+	"1.0.2": {
+		"time": "08 May, 2020",
+		"desc": [
+			"Added: new style for widget Product List",
+			"Updated: new layout for home Medical Supplies & home Medical Equipment.",
+			"Fixed: header icon animation."
+		]
+	},
+	"1.0.1": {
+		"time": "06 May, 2020",
+		"desc": [
+			"Fixed: import demo content.",
+			"Fixed: minor responsive style."
+		]
+	},
+	"1.0.0": {
+		"time": "06 May, 2020",
+		"desc": [
+			"Initial Release"
+		]
+	}
+}

@@ -1,0 +1,65 @@
+.popup-product-quick-view-content {
+	display: none;
+}
+
+.popup-product-quick-view {
+	@include LightCloseCursor;
+	z-index: 100001 !important;
+
+	.mfp-close {
+		display: none !important;
+	}
+
+	.mfp-content {
+		position: relative;
+		max-width: 1170px;
+	}
+
+	.product-container {
+		position: relative;
+		overflow: hidden;
+		padding: 30px 0 30px 30px;
+		background: #fff;
+		box-shadow: 0 2px 20px rgba(0, 0, 0, .06);
+		border-radius: 8px;
+		display: flex;
+	}
+
+	.woo-single-images {
+		width: 50%;
+	}
+
+	.product_title {
+		display: none;
+
+		&.title-with-link {
+			display: block;
+		}
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.entry-summary {
+		width: 50%;
+		margin: 0;
+		padding: 0;
+
+		.inner-content {
+			position: relative;
+			height: 570px;
+			max-width: 100%;
+			overflow: hidden;
+
+			> .inner {
+				max-width: calc(100% - 40px);
+				padding-left: 70px;
+			}
+		}
+	}
+
+	.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+		right: 0;
+	}
+}

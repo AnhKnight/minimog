@@ -1,0 +1,35 @@
+.archive-row-actions {
+	margin-bottom: 10px;
+}
+
+.archive-result-count {
+	color: #7e7e7e;
+	margin: 0 0 20px;
+
+	.count {
+		font-weight: 500;
+		color: #333;
+	}
+}
+
+.archive-form-filtering {
+	text-align: right;
+	margin: 0 0 20px;
+
+	.minimog-fake-select-wrap {
+		width: 262px;
+	}
+}
+
+.blog-archive-style-grid,
+.blog-archive-style-grid-02,
+.blog-archive-style-list,
+.blog-archive-style-classic {
+	.page-content {
+		.container {
+			max-width: 1200px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}

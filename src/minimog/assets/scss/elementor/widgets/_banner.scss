@@ -1,0 +1,82 @@
+.minimog-banner {
+	display: block;
+	width: 100%;
+
+	.content-wrap {
+		position: relative;
+	}
+
+	.minimog-image {
+		img {
+			width: 100%;
+		}
+	}
+
+	.content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.title {
+		font-size: 30px;
+		font-weight: 300;
+		background: #fff;
+		padding: 6px 34px 7px;
+		margin: 0;
+	}
+
+	&.style-02 {
+		overflow: hidden;
+
+		.content {
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.minimog-box {
+			overflow: hidden;
+		}
+
+		.title {
+			padding: 6px 0;
+		}
+
+		.sub-title {
+			text-align: center;
+			display: inline-block;
+			padding: 8px 10px;
+		}
+
+		.title {
+			background-color: transparent;
+		}
+
+		.button {
+			justify-self: end;
+			margin-top: auto;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(md) {
+	.minimog-banner {
+		.title {
+			font-size: 26px;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.minimog-banner {
+		.title {
+			font-size: 22px;
+		}
+	}
+}

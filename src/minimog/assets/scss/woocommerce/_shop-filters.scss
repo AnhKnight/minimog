@@ -1,0 +1,131 @@
+.shop-filter-widgets {
+  display: none;
+}
+
+.woocommerce-filtering-content {
+  background: #f8f8f8;
+  border-radius: 5px;
+  padding: 34px 15px 20px;
+  margin: 0 0 58px;
+  width: 100%;
+
+  .widget {
+	 margin: 0 0 30px !important;
+  }
+
+  .widget-title {
+	 font-size: 18px;
+	 font-weight: 500;
+	 line-height: 1.67;
+	 margin: 0 0 11px;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .widget {
+	 position: relative;
+	 min-height: 1px;
+	 padding-right: 15px;
+	 padding-left: 15px;
+	 width: 100%;
+	 -ms-flex: 100%;
+	 flex: 0 0 100%;
+	 max-width: 100%;
+  }
+
+  .widget-content {
+	 position: relative;
+	 overflow: hidden;
+	 max-height: 180px;
+
+	 &.ps-container > .ps-scrollbar-y-rail {
+		opacity: 1 !important;
+		width: 6px !important;
+		background: #eee;
+
+		> .ps-scrollbar-y {
+		  right: 0;
+		  width: 6px !important;
+		}
+	 }
+  }
+
+  input,
+  select,
+  textarea {
+	 background-color: #fff;
+	 border-color: #fff;
+  }
+}
+
+.tm-button.btn-toggle-shop-filters {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0 10px;
+  color: #000;
+  &:before,&:after{
+	 display: none !important;
+  }
+  &:hover{
+	 color: #000;
+  }
+
+  .button-content-wrapper {
+	 &:after {
+		@extend %NormalTransition;
+		@extend %FontAwesomeRegular;
+		content: '\f107';
+		margin-left: 18px;
+	 }
+  }
+
+  &.icon-left .button-icon {
+	 margin-right: 10px;
+  }
+
+  &.active {
+	 .button-content-wrapper {
+		&:after {
+		  content: '\f106';
+		}
+	 }
+  }
+}
+.shop-title{
+  font-size: 34px;
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 0;
+}
+
+@include media-breakpoint-up(sm) {
+  .woocommerce-filtering-content {
+	 .widget {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	 }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .woocommerce-filtering-content {
+	 .widget {
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	 }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .woocommerce-filtering-content {
+	 .widget {
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%;
+	 }
+  }
+}

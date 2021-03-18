@@ -1,0 +1,120 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">portfolio</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">portfolio_category</taxonomy>
+		<taxonomy translate="1">portfolio_tags</taxonomy>
+	</taxonomies>
+
+	<admin-texts>
+		<key name="theme_mods_minimog">
+			<key name="top_bar_style_01_text"/>
+			<key name="top_bar_style_02_text"/>
+			<key name="top_bar_style_03_text"/>
+			<key name="header_style_01_button_text"/>
+			<key name="header_style_01_button_link"/>
+			<key name="header_style_01_button_link_rel"/>
+			<key name="header_style_01_dark_box_shadow"/>
+			<key name="header_style_01_light_box_shadow"/>
+			<key name="header_style_02_button_text"/>
+			<key name="header_style_02_button_link"/>
+			<key name="header_style_02_button_link_rel"/>
+			<key name="header_style_02_dark_box_shadow"/>
+			<key name="header_style_02_light_box_shadow"/>
+			<key name="header_style_03_phone_number_text"/>
+			<key name="header_style_03_phone_number_link"/>
+			<key name="header_style_03_button_text"/>
+			<key name="header_style_03_button_link"/>
+			<key name="header_style_03_button_link_rel"/>
+			<key name="header_style_03_dark_box_shadow"/>
+			<key name="header_style_03_light_box_shadow"/>
+			<key name="header_style_04_button_text"/>
+			<key name="header_style_04_button_link"/>
+			<key name="header_style_04_button_link_rel"/>
+			<key name="header_style_04_dark_box_shadow"/>
+			<key name="header_style_04_light_box_shadow"/>
+			<key name="header_style_05_button_text"/>
+			<key name="header_style_05_button_link"/>
+			<key name="header_style_05_button_link_rel"/>
+			<key name="header_style_05_dark_box_shadow"/>
+			<key name="header_style_05_light_box_shadow"/>
+			<key name="navigation_dropdown_box_shadow"/>
+			<key name="navigation_minimal_01_menu_title"/>
+			<key name="title_bar_search_title"/>
+			<key name="title_bar_home_title"/>
+			<key name="title_bar_archive_category_title"/>
+			<key name="title_bar_archive_tag_title"/>
+			<key name="title_bar_archive_author_title"/>
+			<key name="title_bar_archive_year_title"/>
+			<key name="title_bar_archive_month_title"/>
+			<key name="title_bar_archive_day_title"/>
+			<key name="title_bar_single_blog_title"/>
+			<key name="title_bar_archive_portfolio_title"/>
+			<key name="title_bar_single_portfolio_title"/>
+			<key name="title_bar_single_product_title"/>
+			<key name="footer_copyright_text"/>
+			<key name="google_api_key"/>
+			<key name="notice_cookie_messages"/>
+			<key name="notice_cookie_button_text"/>
+			<key name="error404_page_title"/>
+			<key name="error404_page_text"/>
+			<key name="portfolio_related_title"/>
+			<key name="search_page_no_results_text"/>
+		</key>
+		<key name="theme_mods_minimog-child">
+			<key name="top_bar_style_01_text"/>
+			<key name="top_bar_style_02_text"/>
+			<key name="top_bar_style_03_text"/>
+			<key name="header_style_01_button_text"/>
+			<key name="header_style_01_button_link"/>
+			<key name="header_style_01_button_link_rel"/>
+			<key name="header_style_01_dark_box_shadow"/>
+			<key name="header_style_01_light_box_shadow"/>
+			<key name="header_style_02_button_text"/>
+			<key name="header_style_02_button_link"/>
+			<key name="header_style_02_button_link_rel"/>
+			<key name="header_style_02_dark_box_shadow"/>
+			<key name="header_style_02_light_box_shadow"/>
+			<key name="header_style_03_phone_number_text"/>
+			<key name="header_style_03_phone_number_link"/>
+			<key name="header_style_03_button_text"/>
+			<key name="header_style_03_button_link"/>
+			<key name="header_style_03_button_link_rel"/>
+			<key name="header_style_03_dark_box_shadow"/>
+			<key name="header_style_03_light_box_shadow"/>
+			<key name="header_style_04_button_text"/>
+			<key name="header_style_04_button_link"/>
+			<key name="header_style_04_button_link_rel"/>
+			<key name="header_style_04_dark_box_shadow"/>
+			<key name="header_style_04_light_box_shadow"/>
+			<key name="header_style_05_button_text"/>
+			<key name="header_style_05_button_link"/>
+			<key name="header_style_05_button_link_rel"/>
+			<key name="header_style_05_dark_box_shadow"/>
+			<key name="header_style_05_light_box_shadow"/>
+			<key name="navigation_dropdown_box_shadow"/>
+			<key name="navigation_minimal_01_menu_title"/>
+			<key name="title_bar_search_title"/>
+			<key name="title_bar_home_title"/>
+			<key name="title_bar_archive_category_title"/>
+			<key name="title_bar_archive_tag_title"/>
+			<key name="title_bar_archive_author_title"/>
+			<key name="title_bar_archive_year_title"/>
+			<key name="title_bar_archive_month_title"/>
+			<key name="title_bar_archive_day_title"/>
+			<key name="title_bar_single_blog_title"/>
+			<key name="title_bar_archive_portfolio_title"/>
+			<key name="title_bar_single_portfolio_title"/>
+			<key name="title_bar_single_product_title"/>
+			<key name="footer_copyright_text"/>
+			<key name="google_api_key"/>
+			<key name="notice_cookie_messages"/>
+			<key name="notice_cookie_button_text"/>
+			<key name="error404_page_title"/>
+			<key name="error404_page_text"/>
+			<key name="portfolio_related_title"/>
+			<key name="search_page_no_results_text"/>
+		</key>
+	</admin-texts>
+</wpml-config>

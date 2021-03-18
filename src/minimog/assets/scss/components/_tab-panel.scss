@@ -1,0 +1,129 @@
+.minimog-tabpanel {
+	margin-bottom: 20px;
+
+	&.minimog-tabpanel-horizontal {
+		> .minimog-nav-tabs {
+			@extend %clearfix;
+			text-align: center;
+			border-bottom: 2px solid #eee;
+
+			li {
+				display: inline-block;
+				margin-bottom: -2px;
+
+				a {
+					border-bottom: 2px solid transparent;
+				}
+
+				&.active {
+					a {
+						border-bottom-color: #20ad96;
+					}
+				}
+			}
+		}
+	}
+
+	> .minimog-nav-tabs {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			position: relative;
+			margin: 0;
+
+			a {
+				display: block;
+				text-decoration: none;
+				font-size: 20px;
+				font-weight: 700;
+				padding: 4px 10px;
+				position: relative;
+				color: #ababab;
+				min-height: 38px;
+				box-sizing: border-box;
+				box-shadow: none;
+			}
+
+			&.active {
+				z-index: 2;
+			}
+
+			&.active a,
+			a:hover {
+				color: #333;
+			}
+		}
+	}
+
+	.tab-mobile-heading {
+		@extend %NormalTransition;
+		cursor: pointer;
+		text-decoration: none;
+		font-size: 20px;
+		font-weight: 700;
+		padding: 10px 0;
+		position: relative;
+		color: #ababab;
+		border-bottom: 2px solid #eee;
+
+		&:hover {
+			color: #333;
+		}
+	}
+
+	> .minimog-tab-content {
+		background: #fff;
+	}
+
+	.tab-content {
+		display: none;
+		padding: 20px;
+	}
+
+	.tab-panel {
+		&.active {
+			.tab-mobile-heading {
+				color: #333;
+				border-color: #20ad96;
+			}
+
+			.tab-content {
+				display: block;
+			}
+		}
+	}
+}
+
+.minimog-tab-nav-buttons {
+	display: flex;
+	margin: 20px 0 0;
+
+	button {
+		min-width: 122px;
+		background: #f8f8f8;
+		border-color: #f8f8f8;
+		color: #333;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.tab-button-separator {
+		flex-grow: 1;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.tab-mobile-heading {
+		display: none;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.minimog-nav-tabs {
+		display: none;
+	}
+}

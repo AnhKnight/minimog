@@ -1,0 +1,41 @@
+{
+  "deploy": {
+    "local": "/Volumes/Data/webs/local/minimog/demo/",
+    "remote": {
+      "user": "dungnv",
+      "subDomain": "minimog"
+    }
+  },
+  "syncFolder": "/Volumes/Data/dung_thememove/minimog/",
+  "proxy": {
+    "remote": "http://minimog.thememove.com",
+    "local": "http://dung.local/minimog/demo"
+  },
+  "translate": {
+    "textDomain": "minimog",
+    "bugReport": "http://thememove.com",
+    "team": "ThemeMove <thememovedotcom@gmail.com>"
+  },
+  "notify": {
+    "backgroundColor": "#ab61ff",
+    "fontSize": "1.2em",
+    "top": "50%"
+  },
+  "compileMinifyJS": [
+    {
+      "name": "jquery.sticky-kit.min",
+      "files": [
+        "src/minimog/assets/js/modules/sticky-kit/jquery.sticky-kit.min.js",
+        "src/minimog/assets/js/modules/sticky-kit/init.js"
+      ]
+    },
+    {
+      "name": "headroom",
+      "files": [
+        "src/minimog/assets/js/modules/headroom/headroom.js",
+        "src/minimog/assets/js/modules/headroom/jQuery.headroom.js"
+      ],
+      "bothVersion": true
+    }
+  ]
+}

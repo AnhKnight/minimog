@@ -1,0 +1,110 @@
+.hp5-custom-banner {
+	.elementor-element-populated {
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.badge {
+		position: relative;
+		background-color: #E4573D;
+		color: #fff;
+		padding: 5px 25px;
+
+		&:after {
+			display: inline-block;
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 14.5px 15px 14.5px 0;
+			border-color: transparent #f6efea transparent transparent;
+		}
+
+		&:before {
+			display: inline-block;
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 14.5px 0 14.5px 15px;
+			border-color: transparent transparent transparent #f6efea;
+		}
+	}
+}
+
+.hp5-banner-slider rs-module {
+	border-radius: 5px;
+}
+
+body.has-badge-on-top {
+	header,
+	.page-content {
+		transform: translateY(140px);
+		transition: all .5s ease-in-out;
+
+		@include media-breakpoint-down(sm) {
+			transform: translateY(340px);
+		}
+	}
+
+	#page-footer {
+		margin-top: 140px;
+	}
+
+	&.hidden-badge {
+		header,
+		.page-content {
+			transform: translateY(0);
+		}
+
+		#page-footer {
+			margin-top: 0;
+		}
+	}
+}
+
+.sale-on-top {
+	display: block;
+	position: fixed !important;
+	top: -220px !important;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	transition: all .5s ease-in-out;
+
+	@include media-breakpoint-down(sm) {
+		top: -420px !important;
+	}
+
+	.admin-bar & {
+		top: 32px;
+	}
+
+	&:before {
+		display: flex;
+		@extend %FontAwesomeLight;
+		content: '\f00d';
+		font-size: 16px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 32px;
+		height: 32px;
+		background-color: #fff;
+		color: #000;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	.hidden-badge & {
+		display: none;
+	}
+}

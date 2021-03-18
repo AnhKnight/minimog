@@ -1,0 +1,28 @@
+.rtl {
+	&.woocommerce-checkout {
+		.shop_table {
+			th, td {
+				padding: 15px 0 15px 15px;
+				text-align: right;
+			}
+
+			.coupon {
+				.button,
+				.input-text {
+					margin: 0 0 10px 10px;
+				}
+			}
+		}
+
+		.checkout_coupon .form-row {
+			float: right !important;
+			padding-right: 0;
+			padding-left: 10px;
+		}
+	}
+
+	.btn-empty-cart {
+		margin-left: 10px;
+		margin-right: 0;
+	}
+}

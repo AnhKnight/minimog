@@ -1,0 +1,85 @@
+::-webkit-input-placeholder {
+	color: inherit;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: inherit;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+	color: inherit;
+}
+
+:-ms-input-placeholder {
+	color: inherit;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'] {
+	@extend %NormalTransition;
+	width: 100%;
+	outline: none;
+	border: 1px solid #d2d2d2;
+	border-radius: 5px;
+	padding: 3px 20px;
+	min-height: 45px;
+}
+
+select {
+	@extend %NormalTransition;
+	padding: 3px 35px 3px 20px;
+	min-height: 48px;
+	max-width: 100%;
+	width: 100%;
+	outline: none;
+	border: 1px solid #f8f8f8;
+	border-radius: 26px;
+	background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAELY03+AAAABGdBTUEAALGPC/xhBQAAAFFJREFUCB1tTsERwCAIC9MyhnQMprUJPTw9mweGmACWmQFggGSSQCT02lLUCaayAuTubrcNeNr5TaRAZyhd6A1q2hnkQ8IPKl3G/tyPoHaMfwHyzSNHeemKDAAAAABJRU5ErkJggg==') no-repeat center right 20px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+textarea {
+	@extend %NormalTransition;
+	width: 100%;
+	outline: none;
+	border: 1px solid #f8f8f8;
+	border-radius: 5px;
+	background: #f8f8f8;
+	display: block;
+	padding: 12px 20px 3px;
+	max-width: 100%;
+}
+
+/* Remove box shadow from input on ios */
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+textarea {
+	-webkit-appearance: none;
+}
+
+@-webkit-keyframes autofill {
+	to {
+		color: #666;
+		background: #fff;
+	}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}

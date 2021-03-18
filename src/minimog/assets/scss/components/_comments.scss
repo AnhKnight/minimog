@@ -1,0 +1,326 @@
+.tm-star-rating {
+  display: inline-block;
+
+  .fas {
+	 color: #000;
+  }
+
+  .far {
+	 color: #ababab;
+  }
+}
+
+.comments-area {
+  padding-top: 30px;
+  margin-top: 90px;
+}
+
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.comment-notes,
+.logged-in-as {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+.comments-title,
+.comment-reply-title {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.comments-title {
+  margin-bottom: 37px;
+
+  mark {
+	 color: inherit;
+  }
+}
+
+.comments-wrap {
+  margin-bottom: 64px;
+}
+
+.comment-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  .pingback,
+  .trackback,
+  .comment {
+	 @extend %clearfix;
+	 list-style-type: none;
+	 margin-bottom: 29px;
+	 padding-bottom: 18px;
+	 border-bottom: 1px solid #eee;
+
+	 &:last-child {
+		margin-bottom: 0;
+	 }
+  }
+
+  .trackback,
+  .pingback {
+	 padding-left: 0;
+
+	 .comment-content {
+		margin-left: 0;
+	 }
+  }
+
+  > .trackback,
+  > .pingback,
+  > .comment {
+	 &:last-child {
+		margin-bottom: 0;
+		border-bottom: 0;
+	 }
+  }
+
+  .children {
+	 padding: 0;
+
+	 > li {
+		padding-left: 61px;
+		margin-bottom: 0;
+		margin-top: 30px;
+		padding-bottom: 0;
+		padding-top: 28px;
+		border-bottom: 0;
+		border-top: 1px solid #eee;
+	 }
+  }
+
+  .comment-header {
+	 margin-bottom: 9px;
+  }
+
+  .comment-author {
+	 float: left;
+
+	 img {
+		border-radius: 50%;
+	 }
+  }
+
+  .comment-content {
+	 position: relative;
+	 margin-left: 92px;
+  }
+
+  .meta {
+	 margin-bottom: 6px;
+  }
+
+  .fn {
+	 font-size: 15px;
+	 font-weight: 500;
+	 display: inline-block;
+	 margin-bottom: 0;
+
+	 a {
+		font-style: inherit;
+		font-size: inherit;
+		color: inherit;
+	 }
+  }
+
+  .description {
+	 line-height: 2.14;
+	 color: #696969;
+  }
+
+  .comment-footer {
+	 display: flex;
+	 flex-wrap: wrap;
+	 margin-top: 12px;
+	 color: #ababab;
+	 font-weight: 400;
+  }
+
+  .comment-heading {
+	 display: flex;
+	 align-items: center;
+	 margin-bottom: 10px;
+
+	 .meta {
+		margin-right: 10px;
+		margin-bottom: 0;
+		font-size: 16px;
+		font-weight: 600;
+		color: #000;
+	 }
+  }
+
+  .comment-text {
+	 font-size: 16px;
+	 color: #666666;
+  }
+
+  .comment-datetime {
+	 margin: 0 10px 0 0;
+	 font-size: 12px;
+	 font-weight: normal;
+	 font-style: italic;
+  }
+
+  .comment-actions {
+	 a {
+		font-weight: normal;
+		color: #000;
+		margin: 0 10px 0 0;
+		position: relative;
+		padding: 0 0 7px;
+
+		&:after {
+		  content: "";
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  margin-top: 5px;
+		  height: 2px;
+		  width: 100%;
+		  background-color: #000;
+		  opacity: 0.25;
+		  transition: all .3s;
+		}
+
+		&:hover {
+		  color: #000;
+
+		  &:after {
+			 opacity: 1;
+		  }
+		}
+	 }
+  }
+
+  .comment-awaiting-messages {
+	 display: block;
+  }
+
+  .comment-respond {
+	 margin-top: 30px;
+  }
+}
+
+.comment-form {
+  .row {
+	 margin-left: -14px;
+	 margin-right: -14px;
+  }
+
+  [class*="col-"] {
+	 padding-left: 14px;
+	 padding-right: 14px;
+  }
+
+  textarea {
+	 height: 140px;
+	 padding: 13px 20px 3px;
+  }
+
+  input[type='text'],
+  input[type='email'] {
+	 width: 100%;
+  }
+
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url {
+	 margin: 30px 0 0px;
+  }
+
+  p.form-submit {
+	 display: flex;
+	 justify-content: center;
+	 margin: 30px 0 0;
+  }
+
+  .submit {
+	 min-width: 160px;
+  }
+}
+
+.comment-form-cookies-consent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+
+  label {
+	 cursor: pointer;
+	 font-size: 15px;
+	 color: #000;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .comment-list {
+	 .vcard {
+		img {
+		  width: 50px;
+		}
+	 }
+
+	 .comment-content {
+		margin-left: 70px;
+	 }
+
+	 .children {
+		> li {
+		  padding-left: 35px;
+		}
+	 }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .comment-list {
+	 .comment {
+		margin-top: 25px;
+		padding-top: 30px;
+	 }
+
+	 .vcard {
+		img {
+		  width: 40px;
+		}
+	 }
+
+	 .comment-content {
+		margin-left: 60px;
+	 }
+
+	 .children {
+		> li {
+		  padding-left: 20px;
+		}
+	 }
+  }
+
+  .comment-form {
+	 textarea {
+		height: 120px;
+	 }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .comments-title {
+	 margin-bottom: 0px;
+  }
+  .comment-form-wrap{
+	 padding-top: 20px;
+  }
+}

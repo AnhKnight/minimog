@@ -1,0 +1,33 @@
+.rtl {
+	.minimog-fake-select-wrap {
+		.minimog-fake-select-current {
+			padding: 3px 16px 3px 40px;
+
+			&:after {
+				right: auto;
+				left: 15px;
+			}
+
+			.label {
+				margin-left: 4px;
+				margin-right: 0;
+
+				&:before {
+					margin-left: 16px;
+					margin-right: 0;
+				}
+			}
+		}
+
+		.minimog-fake-select {
+			li {
+				text-align: right;
+
+				&:before {
+					left: auto;
+					right: 10px;
+				}
+			}
+		}
+	}
+}

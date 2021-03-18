@@ -1,0 +1,28 @@
+@import "settings/global";
+@import "settings/bootstrap";
+@import "tools/breakpoints";
+@import "tools/mixins-base";
+@import "tools/elementor-breakpoints";
+/* Woocommerce Styles */
+@import "woocommerce/select2";
+@import "woocommerce/general";
+@import "woocommerce/mini-cart";
+@import "woocommerce/widgets/all";
+@import "woocommerce/archive";
+@import "woocommerce/cart";
+@import "woocommerce/checkout";
+@import "woocommerce/single";
+@import "woocommerce/product-comment";
+@import "woocommerce/my-account";
+@import "woocommerce/wc-fields-factory";
+@import "woocommerce/woo-smart-compare-wishlist";
+@import "woocommerce/quick-view";
+@import "woocommerce/swatches";
+@import "woocommerce/shop-filters";
+@import "woocommerce/brand";
+@import "woocommerce/mobile";
+/* Woocommerce Blocks */
+@import "woocommerce/block/block-heading";
+@import "woocommerce/block/active-filters";
+@import "woocommerce/block/attribute-filter";
+@import "woocommerce/block/price-filter";

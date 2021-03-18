@@ -1,0 +1,11 @@
+.rtl {
+	.elementor-widget-tm-testimonial {
+		&.layout-image-inline {
+			&.align-right {
+				.info {
+					flex-direction: unset;
+				}
+			}
+		}
+	}
+}

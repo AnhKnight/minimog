@@ -1,0 +1,40 @@
+.minimog-time-countdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item{
+	 position: relative;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: column;
+	 padding: 0 25px;
+	 color: #000;
+	 &:before{
+		content: ":";
+		position: absolute;
+		top: 34%;
+		right: 0;
+		font-size: 30px;
+		line-height: 1em;
+		color: #666666;
+		transform: translate3d(50%,-50%,0);
+	 }
+	 &:last-child{
+		&:before{
+		  display: none;
+		}
+	 }
+	 .number{
+		font-size: 60px;
+		font-weight: 300;
+		line-height: 1em;
+		text-transform: uppercase;
+	 }
+	 .label{
+		font-size: 12px;
+		font-weight: 500;
+		text-transform: uppercase;
+	 }
+  }
+}

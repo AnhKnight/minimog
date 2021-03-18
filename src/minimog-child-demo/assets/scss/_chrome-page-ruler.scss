@@ -1,0 +1,15 @@
+#page-ruler-toolbar input[type=number] {
+	height: 20px;
+	color: #ffffff !important;
+	background-color: transparent !important;
+}
+
+#page-ruler-toolbar .page-ruler-px-container.page-ruler-px-container:after {
+	right: 15px !important;
+	color: #cccccc !important;
+}
+
+#page-ruler-guides#page-ruler-guides,
+#page-ruler#page-ruler {
+	z-index: 99999999 !important;
+}

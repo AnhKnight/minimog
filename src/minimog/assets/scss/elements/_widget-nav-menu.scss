@@ -1,0 +1,45 @@
+@media screen and (max-width: $mobile) {
+  .elementor-widget-wp-widget-nav_menu {
+	 .elementor-widget-container {
+		> h5 {
+		  font-size: 16px;
+		  line-height: 24px;
+		  font-weight: 500;
+		  display: block;
+		  position: relative;
+		  margin-bottom: 0;
+
+		  &:before, &:after {
+			 content: "";
+			 position: absolute;
+			 top: 50%;
+			 right: 0;
+			 width: 13px;
+			 height: 2px;
+			 background-color: #000000;
+			 transition: all .3s;
+		  }
+
+		  &:before {
+			 transform: translateY(-50%);
+		  }
+
+		  &:after {
+			 transform: translateY(-50%) rotate(90deg);
+		  }
+		}
+
+		> div {
+		  display: none;
+		}
+
+		&.is-active {
+		  > h5 {
+			 &:after {
+				transform: translateY(-50%) rotate(0deg);
+			 }
+		  }
+		}
+	 }
+  }
+}

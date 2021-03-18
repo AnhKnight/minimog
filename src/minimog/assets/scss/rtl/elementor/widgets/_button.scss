@@ -1,0 +1,17 @@
+.rtl {
+	.tm-button {
+		&.icon-left {
+			.button-icon {
+				margin-right: 0;
+				margin-left: 14px;
+			}
+		}
+
+		&.icon-right {
+			.button-icon {
+				margin-right: 14px;
+				margin-left: 0;
+			}
+		}
+	}
+}

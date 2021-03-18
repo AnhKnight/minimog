@@ -1,0 +1,38 @@
+.minimog-banner-categories {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	.text-wrap {
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		transform: translateY(-50%);
+		max-width: 50%;
+	}
+
+	.categories-name {
+		height: 60px;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.button {
+		display: flex;
+		align-items: center;
+		padding: 0 15px;
+		justify-content: space-between;
+		max-width: 120px;
+		height: 40px;
+
+		&:after {
+			content: '\f105';
+			margin-left: 10px;
+			font-size: 20px;
+			@extend %FontAwesomeLight;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.page-title-bar-01 {
+	.heading {
+		text-align: center;
+	}
+
+	.page-title-bar-inner {
+	  padding: 0 0 80px;
+		> .container {
+			max-width: 970px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .page-title-bar-01 {
+	 border-top: 0;
+	 .page-title-bar-inner{
+		padding-top: 10px !important;
+	 }
+  }
+}

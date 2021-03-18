@@ -1,0 +1,24 @@
+.rtl {
+	.header-search-form {
+		.search-field {
+			padding-left: 50px;
+			padding-right: 20px;
+		}
+
+		.search-submit {
+			left: 0;
+			right: auto;
+			border-radius: 5px 0 0 5px;
+		}
+	}
+
+	.page-open-components:hover {
+		.circle-one {
+			transform: translateX(-18px);
+		}
+
+		.circle-three {
+			transform: translateX(18px);
+		}
+	}
+}

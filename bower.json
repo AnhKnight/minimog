@@ -1,0 +1,68 @@
+{
+  "name": "theme-move",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7",
+    "pixeden-stroke-7-icon": "^1.2.3",
+    "waypoints": "^4.0.1",
+    "headroom-bower": "^0.9.5",
+    "imagesloaded": "^4.1.0",
+    "isotope": "^3.0.1",
+    "jQuery.mmenu": "^5.6.5",
+    "jquery.countdown": "^2.2.0",
+    "jquery.counterup": "jquery-counterup#^2.0.5",
+    "owl.carousel": "^2.1.6",
+    "jquery-smooth-scroll": "^2.0.1",
+    "matchHeight": "matchheight#^0.7.0",
+    "growl": "^1.3.2",
+    "magnific-popup": "^1.1.0"
+  },
+  "install": {
+    "base": "src/minimog/assets/libs",
+    "path": {
+      "js": "{name}/js",
+      "css": "{name}/css",
+      ".map": "{name}/css",
+      "eot": "{name}/fonts",
+      "svg": "{name}/fonts",
+      "ttf": "{name}/fonts",
+      "otf": "{name}/fonts",
+      "woff2": "{name}/fonts",
+      "woff": "{name}/fonts"
+    },
+    "sources": {
+      "font-awesome": [
+        "bower_components/font-awesome/css/*.css",
+        "bower_components/font-awesome/fonts/*"
+      ],
+      "pixeden-stroke-7-icon": [
+        "bower_components/pixeden-stroke-7-icon/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css",
+        "bower_components/pixeden-stroke-7-icon/pe-icon-7-stroke/fonts/*"
+      ],
+      "waypoints": "bower_components/waypoints/lib/jquery.waypoints.min.js",
+      "imagesloaded": "bower_components/imagesloaded/imagesloaded.pkgd.min.js",
+      "isotope": "bower_components/isotope/dist/*",
+      "jquery.countdown": "bower_components/jquery.countdown/dist/*",
+      "owl.carousel": "bower_components/owl.carousel/dist/owl.carousel.min.js",
+      "matchHeight": "bower_components/matchHeight/dist/jquery.matchHeight-min.js",
+      "magnific-popup": [
+        "bower_components/magnific-popup/dist/jquery.magnific-popup.min.js",
+        "bower_components/magnific-popup/dist/magnific-popup.css"
+      ]
+    },
+    "ignore": [
+      "jquery",
+      "ev-emitter",
+      "desandro-matches-selector",
+      "fizzy-ui-utils",
+      "get-size",
+      "masonry",
+      "outlayer"
+    ]
+  }
+}

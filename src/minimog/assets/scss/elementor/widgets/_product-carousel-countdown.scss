@@ -1,0 +1,202 @@
+.minimog-product-carousel-countdown {
+  .product-carousel-countdown-style-01 {
+	 border: 2px solid #4e97fd;
+	 border-radius: 5px;
+	 padding: 0 30px 48px;
+	 margin-top: 21px;
+
+	 .product-countdown-header {
+		display: inline-flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 17px;
+		background: #fff;
+		transform: translateY(-23px);
+		padding: 5px 20px;
+	 }
+
+	 .product-countdown-heading {
+		font-size: 30px;
+		font-weight: 500;
+		line-height: 1.2;
+		margin-right: 18px;
+		margin-bottom: 5px;
+	 }
+
+	 .countdown-wrap {
+		display: inline-flex;
+		align-items: center;
+		color: #fff;
+		background: #e4573d;
+		border-radius: 30px;
+		padding: 6px 24px;
+		margin-bottom: 5px;
+	 }
+
+	 .countdown-label {
+		font-size: 20px;
+		line-height: 1;
+		margin-right: 18px;
+	 }
+
+	 .countdown-content {
+		display: flex;
+		font-size: 24px;
+		line-height: 1;
+		font-weight: 700;
+
+		.text {
+		  display: none;
+		}
+
+		> div {
+		  + div {
+			 position: relative;
+			 margin-left: 10px;
+			 padding-left: 10px;
+
+			 &:before {
+				content: ':';
+				position: absolute;
+				top: -2px;
+				left: -4px;
+			 }
+		  }
+		}
+	 }
+  }
+
+  @include elementor-breakpoint-down(md) {
+	 .minimog-product-carousel-countdown {
+		.product-countdown-heading {
+		  font-size: 26px;
+		}
+	 }
+  }
+
+  @include elementor-breakpoint-down(sm) {
+	 .minimog-product-carousel-countdown {
+		padding: 0 20px 25px;
+
+		.product-countdown-heading {
+		  font-size: 22px;
+		}
+
+		.product-countdown-header {
+		  padding-left: 10px;
+		  padding-right: 10px;
+		}
+
+		.countdown-label {
+		  font-size: 16px;
+		}
+
+		.countdown-content {
+		  font-size: 18px;
+		}
+	 }
+  }
+
+  .product-carousel-countdown-style-02 {
+	 font-family: CircularStd !important;
+
+	 .product-countdown-header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 48px;
+		justify-content: center;
+	 }
+
+	 .product-countdown-heading {
+		font-size: 34px;
+		font-weight: 500;
+		line-height: 1.65;
+		width: 100%;
+		color: #333333;
+		text-align: center;
+	 }
+
+	 .countdown-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		background: #333333;
+		border-radius: 30px;
+		padding: 6px 24px;
+		margin-bottom: 5px;
+	 }
+
+	 .countdown-label {
+		font-size: 24px;
+		line-height: 1.5;
+		color: white;
+		margin-right: 18px;
+
+	 }
+
+	 .countdown-content {
+		display: flex;
+		font-size: 24px;
+		line-height: 1.5;
+		font-weight: 700;
+		color: #77ccfd;
+
+		.text {
+		  display: none;
+		}
+
+		> div {
+		  + div {
+			 position: relative;
+			 margin-left: 10px;
+			 padding-left: 10px;
+
+			 &:before {
+				content: ':';
+				position: absolute;
+				top: -2px;
+				left: -4px;
+			 }
+		  }
+		}
+	 }
+
+
+	 @include elementor-breakpoint-down(md) {
+		.minimog-product-carousel-countdown {
+		  .product-countdown-heading {
+			 font-size: 26px;
+		  }
+		}
+
+
+		@include elementor-breakpoint-down(sm) {
+		  .minimog-product-carousel-countdown {
+			 padding: 0 20px 25px;
+
+			 .product-countdown-heading {
+				font-size: 22px;
+			 }
+
+			 .product-countdown-header {
+				padding-left: 10px;
+				padding-right: 10px;
+			 }
+
+			 .countdown-label {
+				font-size: 16px;
+			 }
+
+			 .countdown-content {
+				font-size: 18px;
+			 }
+		  }
+		}
+	 }
+  }
+
+}
+

@@ -1,0 +1,15 @@
+.rtl.woocommerce {
+	.select2-container--default{
+		.select2-selection--single .select2-selection__arrow {
+			left: 5px;
+			right: auto;
+		}
+	}
+
+	.select2-search--dropdown {
+		&:after {
+			left: 40px;
+			right: auto;
+		}
+	}
+}

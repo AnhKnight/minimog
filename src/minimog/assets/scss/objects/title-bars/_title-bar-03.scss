@@ -1,0 +1,42 @@
+.page-title-bar-03 {
+	.page-title-bar-bg {
+		background-color: #000
+	}
+
+	.page-title-bar-inner {
+		.container {
+			max-width: 970px;
+		}
+	}
+
+	.heading {
+		text-align: center;
+	}
+
+	.page-breadcrumb {
+		margin-top: 11px;
+	}
+
+	.page-title-bar-meta {
+		margin-top: 15px;
+		text-align: center;
+
+		> div {
+			display: inline-block;
+			padding: 5px 10px;
+		}
+
+		.post-author {
+			img {
+				width: 32px;
+				vertical-align: middle;
+				border-radius: 50%;
+			}
+		}
+
+		.meta-icon {
+			font-size: 14px;
+			margin-right: 7px;
+		}
+	}
+}

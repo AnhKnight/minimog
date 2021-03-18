@@ -1,0 +1,170 @@
+.wpcf7 {
+	.wpcf7-response-output {
+		margin: 30px 0 0;
+		padding: 15px 20px;
+		border: 0;
+		color: #fff;
+	}
+
+	.wpcf7-validation-errors {
+		background: #f0ad4e;
+	}
+
+	.wpcf7-mail-sent-ok {
+		background: #5cb85c;
+	}
+
+	.wpcf7-not-valid-tip {
+		margin-top: 5px;
+		color: #d9534f;
+		font-size: 12px;
+	}
+}
+
+.minimog-contact-form-7 {
+	.wpcf7-form {
+		br {
+			display: none;
+		}
+	}
+
+	.form-item {
+		position: relative;
+
+		&.has-icon {
+			.wpcf7-text,
+			.wpcf7-date {
+				padding-right: 40px;
+			}
+		}
+	}
+
+	.form-icon {
+		font-size: 18px;
+		color: #ccc;
+		position: absolute;
+		top: 14px;
+		right: 17px;
+		line-height: 0;
+	}
+
+	.wpcf7-textarea {
+		height: 150px;
+	}
+
+	.ajax-loader {
+		display: none !important;
+	}
+
+	.form-submit {
+		text-align: center;
+		display: flex;
+	}
+}
+
+.minimog-button-align-start {
+	.form-submit {
+		justify-content: flex-start;
+	}
+}
+
+.minimog-button-align-center {
+	.form-submit {
+		justify-content: center;
+	}
+}
+
+.minimog-button-align-end {
+	.form-submit {
+		justify-content: flex-end;
+	}
+}
+
+.minimog-button-align-stretch {
+	.form-submit {
+		input[type='submit'],
+		button {
+			text-align: center;
+			-webkit-flex-basis: 100%;
+			-ms-flex-preferred-size: 100%;
+			flex-basis: 100%;
+		}
+	}
+}
+
+
+.send-email{
+  text-align: center;
+  br{
+	 display: block !important;
+  }
+  .wpcf7-form-control-wrap{
+	 position: relative;
+	 &:before {
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		content: '\f0e0';
+		@extend %FontAwesomeRegular;
+		font-size: 16px;
+		line-height: inherit !important;
+		color: #000;
+		transform: translateY(-50%);
+	 }
+
+	 input{
+		max-width: 570px;
+		height: 45px;
+		border: 1px solid #d2d2d2;
+		border-radius: 5px;
+		padding-left: 47px;
+		background-color: #fff0 !important;
+		&::placeholder{
+		  color: #000;
+		}
+	 }
+  }
+  input[type="submit"]{
+	 width: 100%;
+	 max-width: 140px;
+	 height: 45px;
+	 border-radius: 5px;
+	 background-color: #000;
+	 font-size: 16px;
+	 font-weight: 500;
+	 color: #fff;
+	 margin: 30px auto 0;
+  }
+  &-arrow{
+	 position: relative;
+	 input[type="submit"]{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		font-size: 0;
+		background-color: #0000;
+		border: 0;
+		width: 45px;
+		height: 47px;
+		margin-top: 0;
+		padding: 0;
+	 }
+
+	 &:before {
+		content: "\f061";
+		@extend %FontAwesomeRegular;
+		font-size: 16px;
+		line-height: inherit !important;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 45px;
+		height: 47px;
+		color: #000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		pointer-events: none;
+	 }
+  }
+}

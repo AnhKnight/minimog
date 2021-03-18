@@ -1,0 +1,14 @@
+.rtl {
+	&.woocommerce,
+	&.woocommerce-page{
+		.col2-set {
+			.col-1 {
+				float: right;
+			}
+			
+			.col-2 {
+				float: left;
+			}
+		}
+	}
+}

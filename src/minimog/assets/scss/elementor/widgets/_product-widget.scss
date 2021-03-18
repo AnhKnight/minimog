@@ -1,0 +1,128 @@
+.minimog-product-widget {
+
+	&.style-01 {
+	  .modern-grid {
+		 grid-gap: 30px;
+	  }
+
+		.grid-item {
+			margin-bottom: 15px;
+		}
+
+	  .product-wrapper {
+		 position: relative;
+
+		 &:hover {
+			.product-main-image {
+			  img {
+				 transform: scale3d(1.1, 1.1, 1.1) translateZ(0);
+			  }
+			}
+
+			.product-hover-image {
+			  z-index: 1;
+			  opacity: 1;
+			  visibility: visible;
+			  transform: scale3d(1.1, 1.1, 1.1) translateZ(0);
+			}
+		 }
+	  }
+
+	  .product-thumbnail {
+		  @extend %NormalTransition;
+		  position: relative;
+		  margin-bottom: 11px;
+		  display: inline-block;
+		  vertical-align: top;
+	  }
+
+	  .thumbnail {
+		 position: relative;
+		 overflow: hidden;
+		 display: inline-block;
+		 justify-content: center;
+		 align-items: center;
+
+		 img {
+			transform: perspective(1px) translateZ(0);
+			transition: all 1.5s cubic-bezier(0, 0, .2, 1);
+			width: auto;
+			heigh: auto;
+		 }
+	  }
+
+	  .product-hover-image {
+		 transition: .25s opacity, .25s visibility, transform 1.5s cubic-bezier(0, 0, .2, 1);
+		 position: absolute;
+		 top: 0;
+		 left: 0;
+		 width: 100%;
+		 opacity: 0;
+		 visibility: hidden;
+	  }
+
+	  .product-info {
+		  display: inline-block;
+		  padding-bottom: 22px;
+		  vertical-align: top;
+		  width: calc(100% - 160px);
+	  }
+
+	  .woocommerce-loop-product__title {
+		 font-size: 15px;
+		 font-weight: 500;
+		 line-height: 1.6;
+		 margin-bottom: 0;
+
+		 a {
+			display: block;
+			color: inherit;
+		 }
+	  }
+
+	  .price {
+		 font-size: 18px;
+		 display: block;
+		 margin: 6px 0 0;
+
+		 > .price {
+			margin: 0;
+		 }
+
+		  ins,
+		  ins bdi {
+			  color:  #4E97FD !important;
+		  }
+	  }
+
+	  .star-rating {
+		 margin: 9px auto 0;
+	  }
+
+	  .loop-product__category {
+		  display: none;
+	  }
+
+			.swiper-button-prev {
+				position: absolute;
+				right: 40px;
+				top: -60px;
+				opacity: 1 !important;
+				visibility: visible !important;
+			}
+
+			.swiper-button-next {
+				position: absolute;
+				right: 0;
+				top: -60px;
+				opacity: 1 !important;
+				visibility: visible !important;
+			}
+		}
+}
+
+.elementor-widget-tm-product-widget {
+	.product-widget-title {
+		border-bottom: 2px solid #EDEDED;
+	}
+}

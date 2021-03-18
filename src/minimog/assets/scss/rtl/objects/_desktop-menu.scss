@@ -1,0 +1,23 @@
+.desktop-menu {
+
+	.toggle-sub-menu:before {
+		margin-top: 0;
+	}
+
+	.sm-simple {
+		.children {
+			a {
+				.toggle-sub-menu {
+					left: 0;
+					right: auto;
+
+					&:before {
+						left: 30px;
+						right: auto;
+						content: '\f053';
+					}
+				}
+			}
+		}
+	}
+}
